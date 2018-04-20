@@ -1,0 +1,16 @@
+[2018-04-19 21:09:48,899] {models.py:167} INFO - Filling up the DagBag from /Users/Raj/Root/GitHub/Apache-Airflow-Sandbox/hello_world_workflow/airflow_home/dags/hello_world.py
+[2018-04-19 21:09:49,020] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run hello_world hello_task 2018-04-19T21:09:28.712532 --job_id 5 --raw -sd DAGS_FOLDER/hello_world.py']
+[2018-04-19 21:09:49,269] {base_task_runner.py:95} INFO - Subtask: [2018-04-19 21:09:49,268] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2018-04-19 21:09:49,567] {base_task_runner.py:95} INFO - Subtask: [2018-04-19 21:09:49,567] {models.py:167} INFO - Filling up the DagBag from /Users/Raj/Root/GitHub/Apache-Airflow-Sandbox/hello_world_workflow/airflow_home/dags/hello_world.py
+[2018-04-19 21:09:49,681] {base_task_runner.py:95} INFO - Subtask: [2018-04-19 21:09:49,681] {models.py:1126} INFO - Dependencies all met for <TaskInstance: hello_world.hello_task 2018-04-19 21:09:28.712532 [queued]>
+[2018-04-19 21:09:49,685] {base_task_runner.py:95} INFO - Subtask: [2018-04-19 21:09:49,685] {models.py:1126} INFO - Dependencies all met for <TaskInstance: hello_world.hello_task 2018-04-19 21:09:28.712532 [queued]>
+[2018-04-19 21:09:49,685] {base_task_runner.py:95} INFO - Subtask: [2018-04-19 21:09:49,685] {models.py:1318} INFO - 
+[2018-04-19 21:09:49,685] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-04-19 21:09:49,685] {base_task_runner.py:95} INFO - Subtask: Starting attempt 1 of 1
+[2018-04-19 21:09:49,685] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-04-19 21:09:49,685] {base_task_runner.py:95} INFO - Subtask: 
+[2018-04-19 21:09:49,692] {base_task_runner.py:95} INFO - Subtask: [2018-04-19 21:09:49,692] {models.py:1342} INFO - Executing <Task(PythonOperator): hello_task> on 2018-04-19 21:09:28.712532
+[2018-04-19 21:09:49,699] {base_task_runner.py:95} INFO - Subtask: [2018-04-19 21:09:49,699] {python_operator.py:81} INFO - Done. Returned value was: Hello world!
+[2018-04-19 21:09:49,707] {base_task_runner.py:95} INFO - Subtask: /Users/Raj/Root/GitHub/Apache-Airflow-Sandbox/hello_world_workflow/venv_hello_world_workflow/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2018-04-19 21:09:49,708] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2018-04-19 21:09:54,027] {jobs.py:2083} INFO - Task exited with return code 0
