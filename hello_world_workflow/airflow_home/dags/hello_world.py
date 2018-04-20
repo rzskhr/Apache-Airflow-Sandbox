@@ -19,4 +19,9 @@ dummy_operator = DummyOperator(task_id='dummy_task', retries=3, dag=dag)
 
 hello_operator = PythonOperator(task_id='hello_task', python_callable=print_hello, dag=dag)
 
+
+# Dependencies in tasks are added by setting other actions as upstream (or downstream).
+# Link the operations in a chain so that ...
+# hello_operator will be run after dummy_operator;
+# dummy_operator ->  hello_operator
 dummy_operator >> hello_operator
